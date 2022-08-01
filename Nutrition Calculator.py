@@ -1,5 +1,5 @@
 
-#BMI, BMR & Micronutrition calculation
+#BMI, BMR & Micronutrition Calculator
 #Base_input
 print("Welcome to Val's Micronutrition Calculator")
 input("Press enter to start")
@@ -39,7 +39,7 @@ fat_m = str(fat_m)
 diet_calories_m = float(diet_calories_m) - 300
 diet_calories_m = format(diet_calories_m, ".2f")
 diet_calories_m = str(diet_calories_m)
-#macronutrients_woman
+#Macronutrients_woman
 protein_w = float(diet_calories_m) * .5 / 4
 protein_w = format(protein_w, ".2f")
 protein_w = str(protein_w)
