@@ -26,7 +26,7 @@ input("Press enter for your micronutrition plan!\n")
 #BMR_calculation_(Basal Metabolic Rate)
 diet_calories_m = str(88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age) *1.55)
 diet_calories_w = str(447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age) *1.55)
-#Macronutriants_man
+#Macronutrients_man
 protein_m = float(diet_calories_m) * .5 / 4
 protein_m = format(protein_m, ".2f")
 protein_m = str(protein_m)
