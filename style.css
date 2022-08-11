@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  
+  
+}
+
+
+h1 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  animation: neon 5s infinite;
+  font-size: 5rem;
+  
+}
+
+p {
+  color: aqua;
+  animation: neon 5s infinite;
+  text-align: center;
+  font-size: 2.3rem;
+}
+input{
+  margin-top: 2rem;
+}
+
+fieldset {
+  margin-top: 3rem;
+  color: aqua;
+  animation: neon 5s infinite;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.background {
+  background-color: #000;
+  
+ 
+}
+input[type=text] {
+  border: 2px solid red;
+  border-radius: 4px;
+  height: 2.5em;
+  font-size: 1rem;
+}
+
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+input[type=submit] {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 1em 1.6em;
+  color: #fff;
+  font-weight: 900;
+  background: linear-gradient(#ff6f48, #f02aa6);
+  padding: 1em 1.2em;
+  border-radius: 100px;
+  border-style: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-image: linear-gradient(
+    to right, #FFC2C2,
+     #FFD7A8);
+     color: #f02aa6;
+}
+
+
+@keyframes neon {
+  0%, 39%, 41%, 59%, 61%, 100% {
+    text-shadow: 
+    #fff 0 0 12px,
+    #FF3AAD 0 0 24px,
+    #FF3AAD 0 0 36px; 
+  }
+  40%, 60% {
+    text-shadow: none; /*for a small flicker effect*/
+  }
+}
