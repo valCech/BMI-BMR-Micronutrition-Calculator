@@ -6,10 +6,15 @@
   box-sizing: border-box;
 }
 
-body {
-  
-  
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
+
 
 
 h1 {
@@ -20,6 +25,7 @@ h1 {
   font-size: 5rem;
   
 }
+
 
 p {
   color: aqua;
@@ -37,26 +43,35 @@ fieldset {
   animation: neon 5s infinite;
   text-align: center;
   font-size: 2.3rem;
+  
 }
 
 .background {
   background-color: #000;
-  
- 
 }
 input[type=text] {
   border: 2px solid red;
   border-radius: 4px;
-  height: 2.5em;
-  font-size: 1rem;
+  height: 2em;
+  font-size: 1.5rem;
 }
 
+.gender{
+  border: 2px solid red;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 2.5em;
+  width: 18em;
+  font-size: 1.2rem;
+  display: inline-block;
+}
 
 input[type=text]:focus {
   background-color: lightblue;
 }
 
-input[type=submit] {
+.button {
+  margin-top: 1.5em;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -70,8 +85,7 @@ input[type=submit] {
   border-style: none;
   cursor: pointer;
 }
-
-input[type=submit]:hover {
+.button:hover {
   background-image: linear-gradient(
     to right, #FFC2C2,
      #FFD7A8);
