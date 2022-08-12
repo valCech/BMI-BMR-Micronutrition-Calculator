@@ -9,30 +9,35 @@
 </head>
 <body class="background">
   <h1>BMI, BMR & Macronutrient Calculator</h1>
-  <p>Improve Your Health. Metabolic Weight Loss Plan &#128293</p>
-  </p>
+  <p>Improve Your Health. Metabolic Weight Loss Plan &#128293;</p>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"> 
+ <fieldset id="myForm">
+  
+  <label for="name">First Name:</label>
+  <input type="text" name="dff[]" id="name" required>
+  
+  <label for="age">Age:</label>
+  <input placeholder="enter number" type="text" name="dff[]" id="age" required>
+ 
+  <label for="height">Height:</label>
+  <input placeholder="centimetres" type="text" name="dff[]" id="height" required>
+  
+  <label for="weight">Weight:</label>
+  <input placeholder="kilograms" type="text" name="dff[]" id="weight" required>
+
   <fieldset>
-  <label aria-autocomplete="list" id="label" for="name">First Name:</label>
-  <input id="input" type="text" name="userName" id="userName">
-  <label  aria-autocomplete="list" id="label" for="age">Age:</label>
-  <input placeholder="enter number" id="input" type="text" name="userAge" id="userAge">
-  <label  aria-autocomplete="list" id="label" for="height">Height:</label>
-  <input placeholder="centimetres" id="input" type="text" name="userName" id="userHeight">
-  <label  aria-autocomplete="list" id="label" for="weight">Weight:</label>
-  <input placeholder="kilograms" id="input" type="text" name="userAge" id="userWeight">
-  <fieldset>
-  <legend>Select Your Gender:</legend>   
-  <form>
-    <select class="gender" id="myList" onchange="dropList()">
-      <option>Woman</option>
-      <option>Man</option>  
-      <option>Fluid</option>
-      <option>X</option>
-      <option>Not sure</option>
-    </select>
-  </form>
-</fieldset> 
-  <input id="submit" type="submit" value="Submit" id="submit">           
-<script src="main.js"></script>  
+   <legend>Select Your Gender:</legend>   
+     <select class="gender" required>
+       <option>Woman</option>
+       <option>Man</option>  
+       <option>Fluid</option>
+       <option>X</option>
+       <option>Not sure</option>
+     </select>
+   </fieldset>  
+   <div><button class="button" type="submit" value="Submit" >Submit</button></div>
+ </fieldset> 
+ 
+</form>         
 </body>
 </html>
