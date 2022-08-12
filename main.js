@@ -1,29 +1,24 @@
-alert('Welcome to Val\'s project');
-var fname = document.getElementById("fname").value;
-var age = document.getElementById("age").value;
-var height = document.getElementById("height").value;
-var weight = document.getElementById("weight").value;
-var gender = document.querySelector("#gender").value
+
 
 // Form validation(all fileds must be filled)
 function validateForm() {
   let name = document.forms["myForm"]["name"].value;
-  if (x == "") {
+  if (name == "") {
     alert("Name must be filled out");
     return false;
   }
   let age = document.forms["myForm"]["age"].value;
-  if (x == "") {
+  if (age == "") {
     alert("Age must be filled out");
     return false;
   }
   let weight = document.forms["myForm"]["weight"].value;
-  if (x == "") {
+  if (weight == "") {
     alert("Weight must be filled out");
     return false;
   }
   let height = document.forms["myForm"]["height"].value;
-  if (x == "") {
+  if (height == "") {
     alert("Height must be filled out");
     return false;
   }
@@ -33,19 +28,40 @@ function validateForm() {
 //   var mylist = document.getElementById("myList");
 //   document.getElementById("gender").value = mylist.options[mylist.selectedIndex].text;}
 
-// // BMI (Body Mass Index)
-// var bmi = weight / ((height/100)**2);
-// BMI1 = round(BMI, 1)
-//   alert("Your BMI is " + BMI1);
-// if (BMI1 < 18.5) {
-//   alert("You are underweight");
-// }
-// else if (BMI1 >= 18.5 && BMI1 < 25) {
-//   alert("You are normal");
-// } 
-// else if (BMI1 >= 25 && BMI1 < 30) {
-//   alert("You are overweight");
-// }
-// else if (BMI1 >= 30) {
-//   alert("You are obese");
-// }}
+// BMI (Body Mass Index)
+const  button = document.getElementById("btn");
+
+button.addEventListener("click", () => {
+  
+  let height = parseInt(document.getElementById("height").value);
+  let weight = parseInt(document.getElementById("weight").value);
+  let results = document.getElementById("bmiResult");
+
+  
+  let bmi = weight / ((height * height)/100);
+  bmi = bmi.toFixed(2);
+
+ document.getElementById('bmiResult').innerHTML = bmi;
+
+ let status = "";
+
+  if (bmi < 18.5) {
+    status = "Underweight";
+  }
+  else if (bmi < 25) {
+    status = "Normal";
+  }
+  else if (bmi < 30) {
+    status = "Overweight";
+  }
+  else if (bmi>= 31) {
+    status = "Obese";
+  }
+  else {
+    status = "Wrong entry,try again please";
+  }
+  document.getElementById('status').innerHTML = status;
+  
+});
+
+
