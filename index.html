@@ -9,25 +9,29 @@
 </head>
 <body class="background">
   <h1>BMI, BMR & Macronutrient Calculator</h1>
-  <p>The best macronutrient ratios to achieve weight loss based on sound science
+  <p>Improve Your Health. Metabolic Weight Loss Plan</p>
   </p>
   <fieldset>
-  <label aria-autocomplete="list" id="label" for="name">Name:</label>
+  <label aria-autocomplete="list" id="label" for="name">First Name:</label>
   <input id="input" type="text" name="userName" id="userName">
   <label aria-autocomplete="list" id="label" for="age">Age:</label>
   <input id="input" type="text" name="userAge" id="userAge">
-  <label aria-autocomplete="list" id="label" for="height">Height:</label>
-  <input id="input" type="text" name="userName" id="userName">
-  <label aria-autocomplete="list" id="label" for="weight">Weight:</label>
-  <input id="input" type="text" name="userAge" id="userAge">
+  <label aria-autocomplete="list" id="label" for="height">Height(cm):</label>
+  <input id="input" type="text" name="userName" id="userHeight">
+  <label aria-autocomplete="list" id="label" for="weight">Weight(kg):</label>
+  <input id="input" type="text" name="userAge" id="userWeight">
   <fieldset>
-  <legend>Select Your Gender:</legend>
-    
-  <input type="radio" id="man" name="gender" value="man"
-             checked>
-  <label for="man">Man</label>   
-  <input type="radio" id="woman" name="gender" value="woman">
-  <label for="dewey">Woman</label>   
+  <legend>Select Your Gender:</legend>   
+  <form>
+    <select class="gender" id="myList" onchange="dropList()">
+      <option>Woman</option>
+      <option>Man</option>  
+      <option>Fluid</option>
+      <option>X</option>
+      <option>Not sure</option>
+    </select>
+  </form>
+     
 </fieldset> 
   <input id="submit" type="submit" value="Submit" id="submit">           
 <script src="main.js"></script>  
