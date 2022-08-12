@@ -14,16 +14,16 @@
  <fieldset id="myForm">
   
   <label for="name">First Name:</label>
-  <input type="text" name="dff[]" id="name" required>
+  <input type="text" name="dff[]" id="fname" required>
   
   <label for="age">Age:</label>
-  <input placeholder="enter number" type="text" name="dff[]" id="age" required>
+  <input placeholder="enter number" type="number" name="dff[]" id="age" required>
  
   <label for="height">Height:</label>
-  <input placeholder="centimetres" type="text" name="dff[]" id="height" required>
+  <input placeholder="centimetres" type="number" name="dff[]" id="height" required>
   
   <label for="weight">Weight:</label>
-  <input placeholder="kilograms" type="text" name="dff[]" id="weight" required>
+  <input placeholder="kilograms" type="number" name="dff[]" id="weight" required>
 
   <fieldset>
    <legend>Select Your Gender:</legend>   
@@ -35,9 +35,16 @@
        <option>Not sure</option>
      </select>
    </fieldset>  
-   <div><button class="button" type="submit" value="Submit" >Submit</button></div>
- </fieldset> 
- 
-</form>         
+    		</form>
+   <div><button id="btn" type="submit" value="Submit">Calculate</button></div>
+   <div class="result">
+    <p>Your BMI is <span id="bmiResult">00.00</span></p>
+    <p class="comment">Condition:<span id="status">na</span> </p>
+   </div>
+  </fieldset> 
+</form>
+
+
+  <script src="script.js"></script>         
 </body>
 </html>
