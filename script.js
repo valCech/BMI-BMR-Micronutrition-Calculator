@@ -38,7 +38,7 @@ button.addEventListener("click", () => {
   let results = document.getElementById("bmiResult");
 
   
-  let bmi = weight / ((height * height)/100);
+  let bmi = weight / ((height * height)/10000);
   bmi = bmi.toFixed(2);
 
  document.getElementById('bmiResult').innerHTML = bmi;
