@@ -10,20 +10,28 @@
 <body class="background">
   <h1>BMI, BMR & Macronutrient Calculator</h1>
   <p>Improve Your Health. Metabolic Weight Loss Plan &#128293;</p>
-<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post"> 
+  
+<form name="myForm" action="http://webdevbasics.net./scripts/demo.php"
+  onsubmit="return validateForm()" method="post"> 
  <fieldset id="myForm">
   
-  <label for="name">First Name:</label>
-  <input type="text" name="dff[]" id="fname" required>
   
-  <label for="age">Age:</label>
-  <input placeholder="enter number" type="number" name="dff[]" id="age" required>
- 
-  <label for="height">Height:</label>
-  <input placeholder="centimetres" type="number" name="dff[]" id="height" required>
+    <div class="name_age_field">
+      <label for="name">First Name:</label>
+      <input type="text" name="dff[]" id="fname" required>
+      
+      <label for="age">Age:</label>
+      <input placeholder="enter number" type="number" name="dff[]" id="age" required>
+    </div>
+
+    <div class="height_weight_field">
+      <label for="height">Height:</label>
+      <input placeholder="centimetres" type="number" name="dff[]" id="height" required>
+      
+      <label for="weight">Weight:</label>
+      <input placeholder="kilograms" type="number" name="dff[]" id="weight" required>
+    </div>
   
-  <label for="weight">Weight:</label>
-  <input placeholder="kilograms" type="number" name="dff[]" id="weight" required>
 
   <fieldset>
    <legend>Select Your Gender:</legend>   
@@ -39,12 +47,16 @@
    <div><button id="btn" type="submit" value="Submit">Calculate</button></div>
    <div class="result">
     <p>Your BMI is <span id="bmiResult">00.00</span></p>
-    <p class="comment">Condition:<span id="status">na</span> </p>
+    <p class="comment">Condition: <span id="status">na</span> </p>
+    <p>Your BMR is <span id="bmrResult">00.00</span></p>
+    <p>Your daily calorie intake is <span id="calorieResult">00.00</span></p>
+    <p>Your daily protein intake is <span id="proteinResult">00.00</span></p>
+    <p>Your daily fat intake is <span id="fatResult">00.00</span></p>
+    <p>Your daily carbohydrate intake is <span id="carbResult">00.00</span></p>
    </div>
-  </fieldset> 
+ </fieldset> 
 </form>
 
-
-  <script src="script.js"></script>         
+<script src="script.js"></script>         
 </body>
 </html>
